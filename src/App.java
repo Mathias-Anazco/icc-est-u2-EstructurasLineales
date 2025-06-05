@@ -28,10 +28,10 @@ public class App {
         cola.add(5);
         cola.add(7);
         cola.add(10);
-        System.out.println("tam = " + cola.size);
+        System.out.println("tam = " + cola.size());
         cola.printCola();
         cola.remove();
-        System.out.println("tam = " + cola.size);
+        System.out.println("tam = " + cola.size());
         cola.printCola();
 
         Persona p1 = new Persona("Pablo");
@@ -47,6 +47,12 @@ public class App {
         System.out.println("Atiene a la persona => " + colaPersonas.remove().getNombre());
         System.out.println(colaPersonas.size());
         colaPersonas.printCola();
+
+        System.out.println("Maria esta en la posicion "+colaPersonas.findByName("Maria"));
+        System.out.println("Elimina");
+        colaPersonas.removeByName("Maria");
+        colaPersonas.printCola();
+
     
     }
 }

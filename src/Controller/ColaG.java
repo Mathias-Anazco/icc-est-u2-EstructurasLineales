@@ -2,6 +2,7 @@ package Controller;
 import java.util.EmptyStackException;
 
 import Models.NodeGeneric;
+import Models.Persona;
 
 public class ColaG<T> {
     private NodeGeneric<T> inicio;
@@ -59,4 +60,52 @@ public class ColaG<T> {
     public int size() {
         return size;
     }
+
+    public int findByName(String nombre) {
+        int posicion = 0;
+        NodeGeneric<T> Node = inicio;  
+        while (Node != null) {         
+            if (Node.getValue().toString().equals(nombre)) {  
+            return posicion;  
+        }
+        Node = Node.getNext();   
+    }
+    return -1;  
+    }
+
+public Persona removeByName(String nombre) {
+    if (isEmpty()) {
+        throw new EmptyStackException();
+    }
+
+    NodeGeneric<T> actual = inicio;
+    NodeGeneric<T> anterior = null;
+
+    while (actual != null) {
+        T valor = actual.getValue();
+        // Verifica que sea una Persona
+        if (valor instanceof Persona) {
+            Persona persona = (Persona) valor;
+            if (persona.getNombre().equalsIgnoreCase(nombre)) {
+                // Si es el primer nodo
+                if (anterior == null) {
+                    inicio = actual.getNext();
+                    if (inicio == null) {
+                        fin = null;
+                    }
+                } else {
+                    anterior.setNext(actual.getNext());
+                    if (actual == fin) {
+                        fin = anterior;
+                    }
+                }
+                size--;
+                return persona;
+            }
+        }
+        anterior = actual;
+        actual = actual.getNext();
+    }
+    return null; // Si no se encontró
+}
 }
