@@ -1,18 +1,25 @@
-## Getting Started
+# Resolucion de los ejercicios de Estructuras lineales
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## 📌 Información General
 
-## Folder Structure
+- **Título:** Resolucion de los ejercicios de Estructuras lineales
+- **Asignatura:** Estructura de Datos
+- **Carrera:** Computación
+- **Estudiante:** Mathias Añazco
+- **Fecha:** 05/06/2025
+- **Profesor:** Ing. Pablo Torres
 
-The workspace contains two folders by default, where:
+---
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 🧩 Ejercicio 01: Validación de Signos
+Descripción:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Este ejercicio consiste en implementar un validador de expresiones que contienen signos de agrupación: paréntesis (), llaves {} y corchetes [].
+El objetivo es verificar si todos los signos están correctamente balanceados y cerrados en el orden adecuado. Por ejemplo, una expresión como {[()()]} es válida, mientras que ([)] no lo es, ya que el orden de cierre no coincide.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 🧩 Ejercicio 02: Ordenamiento de una Pila (Stack Sorting)
+Descripción:
 
-## Dependency Management
+- El objetivo de este ejercicio es ordenar una pila de números enteros de forma ascendente utilizando únicamente otra pila como estructura auxiliar. No se permite el uso de estructuras adicionales como arreglos o listas.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- El algoritmo simula un ordenamiento tipo "inserción" pero utilizando únicamente las operaciones permitidas sobre pilas: push, pop, peek y isEmpty.
