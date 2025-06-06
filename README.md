@@ -10,6 +10,9 @@
 - **Profesor:** Ing. Pablo Torres
 
 ---
+## 📌 Versión 2.0.2
+
+--- 
 
 ## 🧩 Ejercicio 01: Validación de Signos
 Descripción:
@@ -23,3 +26,6 @@ Descripción:
 - El objetivo de este ejercicio es ordenar una pila de números enteros de forma ascendente utilizando únicamente otra pila como estructura auxiliar. No se permite el uso de estructuras adicionales como arreglos o listas.
 
 - El algoritmo simula un ordenamiento tipo "inserción" pero utilizando únicamente las operaciones permitidas sobre pilas: push, pop, peek y isEmpty.
+
+### 🔗 Enlace al Release 2.0.2
+[Ir al release de la versión 2.0.2](https://github.com/Mathias-Anazco/icc-est-u2-EstructurasLineales/releases/tag/2.0.2)
